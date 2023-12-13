@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Women Empowerment</title>
+</head>
+<body>
+
+<script>
+  // Fetch the content of page.html
+  fetch('page.html')
+    .then(response => response.text())
+    .then(html => {
+      // Replace the body of index.html with the content of page.html
+      document.body.innerHTML = html;
+    })
+    .catch(error => console.error('Error fetching content:', error));
+</script>
+
+</body>
+</html>
